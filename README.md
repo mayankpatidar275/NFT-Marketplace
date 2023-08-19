@@ -1,13 +1,11 @@
-# Sample Hardhat Project
+# NFT Marketplace 
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Build using : Reactjs, Solidity, Hardhat, ether.js and pinata / IPFS
 
-Try running some of the following tasks:
+Only NFT minting, display of My NFTs 
+and connecting wallet code is fully functional.
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+
+
 ```
