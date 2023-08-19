@@ -15,7 +15,7 @@ export const BlockchainProvider = ({ children }) => {
 
   const connectWallet = async () => {
     try {
-      console.log("connecting");
+      // console.log("connecting");
       await window.ethereum.request({ method: 'eth_requestAccounts' });
     } catch (error) {
       console.error("Error connecting wallet:", error);

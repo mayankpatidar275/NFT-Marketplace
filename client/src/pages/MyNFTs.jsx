@@ -13,7 +13,7 @@ const MyNFTs = () => {
     const loadMyNFTs = async () => {
       if (contract && currentAccount) {
         try {
-          console.log(currentAccount);
+          // console.log(currentAccount);
           // console.log("start");
             const nfts = await contract.getMyNFTs(currentAccount);
             const nftIds = nfts.map(nft => nft.tokenId.toNumber());
@@ -28,7 +28,7 @@ const MyNFTs = () => {
           setLoading(false); // Data fetching completed even in case of error
         }
       } else {
-        console.log("no contract or currentaccount");
+        // console.log("no contract or currentaccount");
         setLoading(false); // Data fetching completed even if contract or account is not available
       }
     };
@@ -38,7 +38,7 @@ const MyNFTs = () => {
       // When NFTMinted event is emitted, call loadMyNFTs with the new tokenId
       loadMyNFTs();
       // setMyNFTIds([...myNFTIds, tokenId]);
-      console.log("event called");
+      // console.log("event called");
     };
 
     if (contract) {
